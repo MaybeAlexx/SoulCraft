@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulCraft - Information</title>
+    <link rel="icon" type="image/png" href="https://images-ext-1.discordapp.net/external/4c4x_6Y8iGH6zHpRktMq08J810KG13gOlcQECiAtP98/%3Fsize%3D4096/https/cdn.discordapp.com/icons/1275269441717932113/e84053ab487612543a1099ac55840b5d.png?format=webp&quality=lossless">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-black text-gray-100 font-sans antialiased">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full p-6 z-50 flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-bold tracking-wider uppercase">SoulCraft</a>
+        <nav class="flex items-center">
+            <!-- Menu Button -->
+            <button id="menu-btn" class="z-50">
+                <svg id="menu-open-icon" class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <svg id="menu-close-icon" class="w-8 h-8 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Full Screen Menu -->
+    <div id="full-screen-menu" class="fixed inset-0 z-40 flex-col justify-center items-center space-y-10 bg-black/80 backdrop-blur-lg invisible opacity-0 flex">
+        <a href="index.html#features" class="menu-link text-4xl font-bold text-white">Features</a>
+        <a href="index.html#about-us" class="menu-link text-4xl font-bold text-white">About Us</a>
+        <a href="#regulations" class="menu-link text-4xl font-bold text-white">Regulations</a>
+        <a href="#the-team" class="menu-link text-4xl font-bold text-white">The Team</a>
+        <a href="index.html#join-info" class="menu-link text-4xl font-bold text-white">Server IP</a>
+        <a href="https://discord.gg/N2usA8S6hM" target="_blank" class="menu-link text-4xl font-bold text-white">Discord</a>
+    </div>
+
+    <main class="pt-24 pb-24">
+        <!-- Regulations Section -->
+        <section id="regulations" class="py-20 sm:py-32 px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-bold">SoulCraft Regulations</h2>
+                    <p class="text-gray-400 mt-2">Community Rules & Guidelines</p>
+                </div>
+                <div class="text-left text-lg text-gray-300 space-y-8 bg-gray-900/50 p-8 rounded-lg border border-gray-800">
+                    
+                    <!-- Warning System -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-red-400 mb-4 border-b border-gray-700 pb-2">Warning System</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-400">
+                            <li>Players will receive a <strong>warning</strong> for breaking server rules.</li>
+                            <li>Accumulating <strong>5 warnings</strong> results in a <strong>temporary ban</strong>.</li>
+                            <li>Ban duration depends on the severity of the infractions.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Server Rules -->
+                    <div>
+                        <h3 class="text-3xl font-bold text-red-400 mb-4 border-b border-gray-700 pb-2">Server Rules</h3>
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-2xl font-semibold text-gray-200 mb-2">1. No Cheating or Exploits</h4>
+                                <p class="text-gray-400">X-ray, hacks, duping, or any unfair advantages are strictly prohibited.</p>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-semibold text-gray-200 mb-2">2. No Mass Random Killing (RDM)</h4>
+                                <p class="text-gray-400">You must have a valid in-character or roleplay reason to kill multiple players. Killing 1–2 players is generally acceptable unless it includes stealing valuable items.</p>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-semibold text-gray-200 mb-2">3. Death Loot Rules</h4>
+                                <p class="text-gray-400">You may collect death loot, but:</p>
+                                <ul class="list-disc list-inside space-y-1 pl-4 mt-2 text-gray-400">
+                                    <li>Leave all <strong>armor</strong>.</li>
+                                    <li>You may only take <strong>one tool</strong>.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-semibold text-gray-200 mb-2">4. Raiding & Base Rules</h4>
+                                <p class="text-gray-400">No major griefing or destruction of bases. Allowed actions include:</p>
+                                <ul class="list-disc list-inside space-y-1 pl-4 mt-2 text-gray-400">
+                                    <li>Taking food, blocks, and enchantments.</li>
+                                    <li>Taking valuable items <strong>only in moderation</strong> (e.g., if someone has many sets of netherite armor, taking one is acceptable).</li>
+                                    <li>Killing mobs, but leave at least <strong>two of each type</strong> alive.</li>
+                                    <li>Raiding farms and auto-farms.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-semibold text-gray-200 mb-2">5. Teams & Roleplay Relations</h4>
+                                <p class="text-gray-400">Players may form teams, alliances, and rivalries. Declaring someone an enemy must have an <strong>in-character reason</strong>—not just “because.”</p>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-semibold text-gray-200 mb-2">6. Griefing</h4>
+                                <p class="text-gray-400">Do not grief spawn or public spaces. Do not destroy builds purely to ruin them. Use common sense and respect the world.</p>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-semibold text-gray-200 mb-2">7. Factions System</h4>
+                                <p class="text-gray-400">Players may form <strong>tribes, clans, or empires</strong>. Once you form an <strong>empire</strong>, you must defend your land. Raiding rules loosen for empires—other factions may attack, and if you fail to defend, they may take ores, one armor piece, and one tool per player involved. Empires risk larger raids but do not lose their title if defeated.</p>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-semibold text-gray-200 mb-2">Dragon Egg Rules:</h4>
+                                <ul class="list-disc list-inside space-y-1 pl-4 mt-2 text-gray-400">
+                                    <li>The Dragon Egg is tied to <strong>faction progression</strong>.</li>
+                                    <li>The main developer (<em>SimplyPengo</em>) must be informed of who holds it.</li>
+                                    <li>It cannot be stored in chests, barrels, ender chests, or inventories (except briefly when moving).</li>
+                                    <li>The egg must be <strong>placed</strong> inside your faction territory (in the overworld or where your faction is based).</li>
+                                    <li>It may be secured (e.g., in an obsidian vault), but if stolen, ownership transfers, and factions may gain or lose a tier.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Final Note -->
+                    <div class="border-t border-gray-700 pt-6">
+                        <p class="text-gray-300 italic"><strong>Remember:</strong> These rules exist to keep gameplay fair, fun, and immersive for everyone. Respect each other, play with integrity, and enjoy the Soulcraft experience.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="max-w-6xl mx-auto px-6">
+            <hr class="border-t border-gray-800">
+        </div>
+
+        <!-- The Team Section -->
+        <section id="the-team" class="py-20 sm:py-32 px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md-text-5xl font-bold">Meet the Team</h2>
+                    <p class="text-gray-400 mt-2">The people behind SoulCraft</p>
+                </div>
+
+                <!-- Top Row: Founder & Staff -->
+                <div class="flex flex-wrap justify-center gap-8 mb-16">
+                    <!-- Founder Card -->
+                    <div class="team-card bg-gray-900/50 border border-gray-800 p-8 rounded-2xl text-center flex flex-col items-center w-full max-w-xs">
+                        <img src="https://cdn.discordapp.com/avatars/1317392333767053345/a_ca9bf059a16df1bf98a8f0be94dc6b22.webp?size=128" alt="Founder simplypengo" class="w-24 h-24 rounded-full mb-4 border-4 border-red-500">
+                        <h4 class="text-xl font-bold text-white">
+                            <a href="https://discord.com/users/1317392333767053345" target="_blank" rel="noopener noreferrer" class="hover:text-red-400 transition-colors">@simplypengo</a>
+                        </h4>
+                        <p class="text-gray-400 mb-4">Founder</p>
+                    </div>
+                    <!-- Staff Card -->
+                    <div class="team-card bg-gray-900/50 border border-gray-800 p-8 rounded-2xl text-center flex flex-col items-center w-full max-w-xs">
+                        <img src="https://cdn.discordapp.com/avatars/1217081998749863947/b365584386e0203105a6e85db6043686.webp?size=128" alt="Staff Member Ja4mz" class="w-24 h-24 rounded-full mb-4 border-4 border-gray-500">
+                        <h4 class="text-xl font-bold text-white">@Ja4mz</h4>
+                        <p class="text-gray-400 mb-4">Lead Council</p>
+                    </div>
+                </div>
+
+                <!-- Site Developer -->
+                <div>
+                    <h3 class="text-3xl font-bold text-red-400 mb-8 text-center">Site Developer</h3>
+                    <div class="flex justify-center">
+                        <div class="team-card bg-gray-900/50 border border-gray-800 p-8 rounded-2xl text-center flex flex-col items-center w-full max-w-2xl">
+                            <img src="https://cdn.discordapp.com/avatars/939750816963776573/1910ce67928271b1852705d695db3e09.webp?size=128" alt="Developer Alexx.exe" class="w-24 h-24 rounded-full mb-4 border-4 border-red-500">
+                            <h4 class="text-xl font-bold text-white">
+                                <a href="https://discord.com/users/939750816963776573" target="_blank" rel="noopener noreferrer" class="hover:text-red-400 transition-colors">@_Alexx.exe</a>
+                            </h4>
+                            <p class="text-gray-400 mb-4">Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="fixed bottom-0 left-0 w-full p-6 text-center text-gray-500 z-40">
+        <p>&copy; 2025 SoulCraft. All rights reserved. | Developed by <a href="https://discord.com/users/939750816963776573" target="_blank" rel="noopener noreferrer" class="text-red-400 hover:text-red-300 transition-colors">@_Alexx.exe</a></p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

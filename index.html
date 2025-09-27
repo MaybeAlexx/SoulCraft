@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulCraft</title>
+    <link rel="icon" type="image/png" href="https://images-ext-1.discordapp.net/external/4c4x_6Y8iGH6zHpRktMq08J810KG13gOlcQECiAtP98/%3Fsize%3D4096/https/cdn.discordapp.com/icons/1275269441717932113/e84053ab487612543a1099ac55840b5d.png?format=webp&quality=lossless">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-black text-gray-100 font-sans antialiased">
+
+    <div id="page-content">
+        <!-- Header -->
+        <header class="fixed top-0 left-0 w-full p-6 z-50 flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-wider uppercase">SoulCraft</h1>
+            <nav class="flex items-center">
+                <!-- Menu Button -->
+                <button id="menu-btn" class="z-50">
+                    <svg id="menu-open-icon" class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <svg id="menu-close-icon" class="w-8 h-8 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </nav>
+        </header>
+
+        <!-- Full Screen Menu -->
+        <div id="full-screen-menu" class="fixed inset-0 z-40 flex-col justify-center items-center space-y-10 bg-black/80 backdrop-blur-lg invisible opacity-0 flex">
+            <a href="#features" class="menu-link text-4xl font-bold text-white">Features</a>
+            <a href="#about-us" class="menu-link text-4xl font-bold text-white">About Us</a>
+            <a href="info.html#regulations" class="menu-link text-4xl font-bold text-white">Regulations</a>
+            <a href="info.html#the-team" class="menu-link text-4xl font-bold text-white">The Team</a>
+            <a href="#join-info" class="menu-link text-4xl font-bold text-white">Server IP</a>
+            <a href="https://discord.gg/N2usA8S6hM" target="_blank" class="menu-link text-4xl font-bold text-white">Discord</a>
+        </div>
+
+        <main class="pb-24">
+            <!-- Hero Section -->
+            <section class="h-screen flex flex-col justify-center items-center text-center relative overflow-hidden">
+                <div class="hero-bg absolute inset-0 w-full h-full bg-cover bg-center"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10"></div>
+                <div class="absolute inset-0 bg-gradient-to-b from-black via-black to-red-900/50 opacity-80"></div>
+                
+                <div class="z-20 p-4">
+                    <h2 class="hero-title text-5xl md:text-8xl font-black uppercase tracking-tighter">Forge Your Legacy</h2>
+                    <p class="hero-subtitle text-lg md:text-2xl text-gray-300 mt-4 max-w-3xl mx-auto">
+                        Experience the ultimate Modded Minecraft Survival gameplay. A world of endless adventure awaits.
+                    </p>
+                    <a href="#join-info" class="hero-button mt-10 inline-block bg-red-600 hover:bg-red-500 text-white font-bold py-4 px-10 rounded-lg text-lg uppercase tracking-wider">
+                        Begin Your Journey
+                    </a>
+                </div>
+            </section>
+
+            <!-- About Us Section -->
+            <section id="about-us" class="py-20 sm:py-32 px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="mb-12">
+                        <h3 class="text-4xl md:text-5xl font-bold">About SoulCraft</h3>
+                    </div>
+                    <div class="text-left text-lg text-gray-300 space-y-6">
+                        <p>
+                            Soulcraft, founded by <em class="text-red-400">Hmwis</em> and <em class="text-red-400">Pengo</em> in 2023, started as a server just for friends and has since grown through six unique seasons. Now, we’re turning the page to a new chapter—a fresh beginning for our community.
+                        </p>
+                        <p>
+                            We’re a kind, reasonable, and mature group of players who value creativity, fun, and good company. Whether you’re here to survive, build, or simply hang out, Soulcraft is a welcoming place to be.
+                        </p>
+                    </div>
+                    <div class="mt-12 flex flex-col sm:flex-row justify-center items-center gap-6">
+                        <a href="info.html#the-team" class="about-button bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-8 rounded-lg text-lg tracking-wider">The Team</a>
+                        <a href="#" id="history-btn" class="about-button bg-red-600 hover:bg-red-500 text-white font-bold py-3 px-8 rounded-lg text-lg tracking-wider">Our History</a>
+                        <a href="info.html" class="about-button bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-8 rounded-lg text-lg tracking-wider">Our Regulations</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section id="features" class="py-20 sm:py-32 px-6 bg-black">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h3 class="text-4xl md:text-5xl font-bold">What Makes Us Different</h3>
+                        <p class="text-gray-400 mt-2">An experience crafted for true survivors.</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <!-- Feature Card 1 -->
+                        <div class="feature-card relative bg-gray-900/50 rounded-xl border border-gray-800 overflow-hidden transition-transform duration-300 ease-in-out">
+                            <div class="absolute inset-0 z-0">
+                                <img src="https://www.9minecraft.net/wp-content/uploads/2024/05/prehistoric-world-modpack-sceenshots-19.jpg" alt="Custom Mods" class="w-full h-full object-cover filter blur-sm scale-110">
+                                <div class="absolute inset-0 bg-black/60"></div>
+                            </div>
+                            <div class="relative z-10 p-8">
+                                <h4 class="text-2xl font-semibold mb-2">Custom Mods</h4>
+                                <p class="text-gray-400">Enhanced gameplay with a unique modpack you won't find anywhere else.</p>
+                            </div>
+                        </div>
+                        <!-- Feature Card 2 -->
+                        <div class="feature-card relative bg-gray-900/50 rounded-xl border border-gray-800 overflow-hidden transition-transform duration-300 ease-in-out">
+                            <div class="absolute inset-0 z-0">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxTDVmoZHz-YkugooWu-hAnVZjwtSjwKVm7z572815nmGi52JhlDmzwsZ1sWHKufEHDN4&usqp=CAU" alt="Community Events" class="w-full h-full object-cover filter blur-sm scale-110">
+                                <div class="absolute inset-0 bg-black/60"></div>
+                            </div>
+                            <div class="relative z-10 p-8">
+                                <h4 class="text-2xl font-semibold mb-2">Community Events</h4>
+                                <p class="text-gray-400">Engage in epic, server-wide events with exclusive rewards and challenges.</p>
+                            </div>
+                        </div>
+                        <!-- Feature Card 3 -->
+                        <div class="feature-card relative bg-gray-900/50 rounded-xl border border-gray-800 overflow-hidden transition-transform duration-300 ease-in-out">
+                            <div class="absolute inset-0 z-0">
+                                <img src="https://i.ytimg.com/vi/hcaQug00LB0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC0xwD6CdnTi6eg38ef7NhxmNBssQ" alt="Dynamic Survival" class="w-full h-full object-cover filter blur-sm scale-110">
+                                <div class="absolute inset-0 bg-black/60"></div>
+                            </div>
+                            <div class="relative z-10 p-8">
+                                <h4 class="text-2xl font-semibold mb-2">Dynamic Survival</h4>
+                                <p class="text-gray-400">Face new challenges and adapt to a world that evolves with the community.</p>
+                            </div>
+                        </div>
+                        <!-- Feature Card 4 -->
+                        <div class="feature-card relative bg-gray-900/50 rounded-xl border border-gray-800 overflow-hidden transition-transform duration-300 ease-in-out">
+                            <div class="absolute inset-0 z-0">
+                                <img src="https://i.redd.it/d3khmvso49zc1.png" alt="Dedicated Staff" class="w-full h-full object-cover filter blur-sm scale-110">
+                                <div class="absolute inset-0 bg-black/60"></div>
+                            </div>
+                            <div class="relative z-10 p-8">
+                                <h4 class="text-2xl font-semibold mb-2">Dedicated Staff</h4>
+                                <p class="text-gray-400">A friendly and supportive team ready to ensure your adventure is seamless.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Join Info Section -->
+            <section id="join-info" class="py-20 sm:py-32 px-6 bg-black">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h3 class="text-4xl md:text-5xl font-bold">Join the Server</h3>
+                    <p class="text-gray-400 mt-2">Copy the IP below and connect.</p>
+                    <div class="mt-8 bg-gray-900/50 border border-gray-800 rounded-lg p-6 max-w-md mx-auto">
+                        <div class="flex justify-between items-center">
+                            <p id="server-ip" class="text-lg md:text-xl font-mono text-gray-200 select-all">soulcraft.secure.pebble.host</p>
+                            <button id="copy-ip-btn" class="bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-500 transition-all duration-300 text-sm">
+                                Copy
+                            </button>
+                        </div>
+                        <p class="text-gray-500 mt-4 text-sm">Version 1.21+</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Join CTA Section -->
+            <section id="join" class="py-20 sm:py-32 px-6 text-center bg-gray-900/50">
+                <div class="max-w-4xl mx-auto">
+                    <h3 class="text-4xl md:text-5xl font-bold">Your Adventure Awaits</h3>
+                    <p class="text-gray-400 mt-4 text-lg">Join the SoulCraft community today and start building your story.</p>
+                    <a href="https://discord.gg/N2usA8S6hM" target="_blank" rel="noopener noreferrer" class="cta-button mt-8 inline-block bg-red-600 hover:bg-red-500 text-white font-bold py-4 px-10 rounded-lg text-lg uppercase tracking-wider">
+                        Join our Discord
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Developer Popup -->
+    <div id="developer-popup" class="fixed bottom-8 right-8 z-[60] bg-black border border-gray-800 rounded-lg p-6 max-w-sm text-white invisible opacity-0">
+        <button id="close-popup-btn" class="absolute top-4 right-4 text-gray-500 hover:text-white transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">Crafted with Excellence</p>
+        <h3 class="text-2xl font-bold mb-3">Website by <span class="text-red-400">@_Alexx.exe</span></h3>
+        <p class="text-gray-400 mb-6 text-sm">Experience premium web development that elevates your digital presence.</p>
+        <a href="https://discord.com/users/939750816963776573" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold uppercase tracking-wider text-red-400 hover:text-red-300 transition-colors flex items-center gap-2">
+            Contact Me!
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+
+    <!-- History Popup -->
+    <div id="history-popup" class="fixed inset-0 z-[70] flex justify-center items-center invisible opacity-0 p-6">
+        <div class="absolute inset-0 bg-black/60 cursor-pointer" id="history-popup-overlay"></div>
+        <div class="relative z-10 bg-gray-900 border border-gray-800 rounded-lg p-8 max-w-lg text-center text-white shadow-2xl">
+            <button id="close-history-popup-btn" class="absolute top-4 right-4 text-gray-500 hover:text-white transition-colors">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <p class="text-lg">Simplepengo was lazy enough to not send the history on time hence you're seeing this :D</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="fixed bottom-0 left-0 w-full p-6 text-center text-gray-500 z-40">
+        <p>&copy; 2025 SoulCraft. All rights reserved. | Developed by <a href="https://discord.com/users/939750816963776573" target="_blank" rel="noopener noreferrer" class="text-red-400 hover:text-red-300 transition-colors">@_Alexx.exe</a></p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
